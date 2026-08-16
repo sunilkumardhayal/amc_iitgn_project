@@ -1,116 +1,252 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Us | AMC Ahmedabad 2057 Master Plan</title>
-    <meta
-      name="description"
-      content="Contact form and official contact details for the AMC Ahmedabad 2057 Master Plan."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body data-page="contact">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="AMC Ahmedabad 2057 Master Plan home">
-          <span class="brand-mark">A</span>
-          <span class="brand-text">
-            <span class="brand-kicker">AMC Consultancy Project</span>
-            <span class="brand-name">Ahmedabad 2057 Master Plan</span>
-            <span class="brand-subtitle">IIT Gandhinagar urban infrastructure partnership</span>
-          </span>
-        </a>
-        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact form and official contact details for the AMC Ahmedabad 2057 Master Plan." />
+  <title>Contact Us | AMC Ahmedabad 2057 Master Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+          colors: {
+            hydro: {
+              50: "#eff8ff",
+              100: "#d9f0ff",
+              200: "#b5e2ff",
+              300: "#83cef9",
+              400: "#45b1eb",
+              500: "#1796d6",
+              600: "#0f74a8",
+              700: "#0d5e86",
+              800: "#0b4461",
+              900: "#061f31",
+            },
+            amber: {
+              400: "#fbbf24",
+              500: "#f59e0b",
+              600: "#d97706",
+            },
+          },
+          boxShadow: {
+            glow: "0 20px 60px rgba(10, 20, 40, 0.35)",
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(69, 177, 235, 0.18), transparent 28%),
+        radial-gradient(circle at 82% 14%, rgba(245, 158, 11, 0.18), transparent 22%),
+        linear-gradient(180deg, #05111c 0%, #081725 42%, #0a1220 100%);
+    }
+    .glass {
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-100 antialiased selection:bg-amber-400/30 selection:text-white">
+  <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-slate-950" href="#main">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/65 glass">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex min-w-0 items-center gap-3">
+        <div class="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-white/10 text-sm font-black tracking-[0.24em] text-white shadow-glow">AMC</div>
+        <div class="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-cyan-400/10 text-[0.62rem] font-black tracking-[0.24em] text-cyan-100 shadow-glow">IITGN</div>
+        <div class="min-w-0">
+          <div class="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-cyan-100/65">AMC Consultancy Project</div>
+          <div class="truncate text-base font-extrabold text-white sm:text-lg">Ahmedabad 2057 Master Plan</div>
+          <div class="truncate text-xs text-slate-300 sm:text-sm">IIT Gandhinagar urban infrastructure partnership</div>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-3 md:hidden">
+        <button id="navToggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/8 text-white transition hover:bg-white/12" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
-        <nav class="nav-links" id="primary-nav">
-          <a href="index.html" data-page="home">Home</a>
-          <a href="overview.html" data-page="overview">Overview</a>
-          <a href="deliverables.html" data-page="deliverables">Deliverables</a>
-          <a href="scope.html" data-page="scope">Scope of Work</a>
-          <a href="timeline.html" data-page="timeline">Timeline</a>
-          <a href="contact.html" data-page="contact">Contact Us</a>
-        </nav>
       </div>
-    </header>
 
-    <a class="floating-contact" href="#contact-form">Contact Us</a>
-    <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+      <nav id="primary-nav" class="hidden w-full flex-col gap-2 rounded-3xl border border-white/10 bg-slate-950/95 p-3 shadow-glow md:flex md:w-auto md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
+        <a href="index.html" data-page="home" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white">Home</a>
+        <a href="overview.html" data-page="overview" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white">Overview</a>
+        <a href="scope.html" data-page="scope" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white">Scope</a>
+        <a href="timeline.html" data-page="timeline" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white">Timeline</a>
+        <a href="contact.html" data-page="contact" class="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="contact-section">
-        <div class="shell">
-          <div class="contact-hero">
-            <span class="eyebrow">Get In Touch</span>
-            <h1 class="contact-title">Let’s talk about water infrastructure, research, and collaboration.</h1>
-            <p class="contact-intro">
-              Reach out using the form below for research collaboration, academic discussion, and applied water
-              infrastructure projects.
+  <main id="main" class="relative overflow-hidden">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 opacity-90">
+      <div class="absolute inset-x-0 top-0 h-[28rem] bg-gradient-to-b from-slate-950 via-slate-950/95 to-transparent"></div>
+      <div class="absolute left-1/2 top-[-8rem] h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl"></div>
+      <div class="absolute right-[-8rem] top-[16rem] h-[22rem] w-[22rem] rounded-full bg-amber-400/10 blur-3xl"></div>
+    </div>
+
+    <section class="mx-auto max-w-7xl px-4 pb-10 pt-10 sm:px-6 lg:px-8 lg:pt-14" data-aos="fade-up">
+      <div class="grid gap-6 lg:grid-cols-[1fr_0.92fr] lg:gap-8">
+        <article class="rounded-[2rem] border border-white/10 bg-slate-950/55 p-6 shadow-glow glass sm:p-8 lg:p-10">
+          <p class="text-xs font-semibold uppercase tracking-[0.32em] text-cyan-100/70">Get In Touch</p>
+          <h1 class="mt-4 max-w-3xl text-4xl font-black leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+            Let's talk about water infrastructure, research, and collaboration.
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
+            Reach out using the form below for research collaboration, academic discussion, and applied water infrastructure projects.
+          </p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-white/6 p-4">
+              <div class="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/70">Research</div>
+              <div class="mt-2 text-sm text-slate-200">Academic collaboration and technical review.</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/6 p-4">
+              <div class="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/70">Project</div>
+              <div class="mt-2 text-sm text-slate-200">Water infrastructure planning and coordination.</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/6 p-4">
+              <div class="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/70">Reply</div>
+              <div class="mt-2 text-sm text-slate-200">Use the form or direct institutional contact details.</div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass sm:p-8" data-aos="fade-left">
+          <div class="overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-950/40">
+            <img
+              src="Pranab Kumar Mohapatra.jpg"
+              alt="Prof. Pranab Kumar Mohapatra"
+              class="h-[22rem] w-full object-cover object-top"
+            />
+          </div>
+
+          <div class="mt-6">
+            <span class="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-cyan-100">Contact Information</span>
+            <h2 class="mt-4 text-2xl font-black text-white">Prof. Pranab Kumar Mohapatra</h2>
+            <p class="mt-3 text-sm leading-7 text-slate-300">
+              Available for research collaboration, academic discussion, and applied water infrastructure projects.
             </p>
           </div>
-          <div class="contact-shell">
-            <div class="contact-form-wrap" id="contact-form">
-              <form class="contact-form" action="https://formspree.io/f/mrpzpwqb" method="POST">
-                <div>
-                  <label class="field-label" for="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div>
-                  <label class="field-label" for="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="you@example.com" required />
-                </div>
-                <div>
-                  <label class="field-label" for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="Tell us about your project or question" required></textarea>
-                </div>
-                <button class="button contact-submit" type="submit">Send Message</button>
-              </form>
+
+          <div class="mt-6 space-y-3 rounded-[1.5rem] border border-white/10 bg-white/6 p-5">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/70">Email</div>
+              <a class="mt-1 block text-base font-semibold text-white transition hover:text-cyan-200" href="mailto:pranabm@iitgn.ac.in">pranabm@iitgn.ac.in</a>
             </div>
-
-            <aside class="contact-info-wrap">
-              <div class="contact-info">
-                <span class="info-badge">Contact Information</span>
-                <div class="info-block">
-                  <h3>Prof. Pranab Kumar Mohapatra</h3>
-                  <p>
-                    Available for research collaboration, academic discussion, and applied water infrastructure projects.
-                  </p>
-                </div>
-                <ul class="contact-list">
-                  <li>
-                    <span class="label">Email</span>
-                    <a href="mailto:pranabm@iitgn.ac.in">pranabm@iitgn.ac.in</a>
-                  </li>
-                  <li>
-                    <span class="label">Phone</span>
-                    <a href="tel:+917383325735">+91 73833 25735</a>
-                  </li>
-                  <li>
-                    <span class="label">Affiliation</span>
-                    <span>IIT Gandhinagar, Ahmedabad</span>
-                  </li>
-                </ul>
-                <p class="contact-note">
-                  This contact panel is styled as a dark, focused information block for direct communication.
-                </p>
-              </div>
-            </aside>
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/70">Phone</div>
+              <a class="mt-1 block text-base font-semibold text-white transition hover:text-cyan-200" href="tel:+917383325735">+91 73833 25735</a>
+            </div>
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/70">Affiliation</div>
+              <div class="mt-1 text-base font-semibold text-white">IIT Gandhinagar, Ahmedabad</div>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer" data-theme="dark">
-      <div class="shell footer-inner">
-        <div>AMC Ahmedabad 2057 Master Plan</div>
-        <div>Contact page powered by Formspree.</div>
+        </aside>
       </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8" data-aos="fade-up">
+      <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900/80 to-slate-950/80 p-6 shadow-glow glass sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-[0.32em] text-amber-200/80">Support</p>
+          <h2 class="mt-3 text-2xl font-black text-white">Direct communication for project coordination</h2>
+          <p class="mt-4 text-sm leading-7 text-slate-300">
+            For project coordination, academic reference, or official correspondence, use the details above.
+          </p>
+        </div>
+
+        <div id="contact-form" class="rounded-[2rem] border border-white/10 bg-white/6 p-6 shadow-glow glass sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-[0.32em] text-cyan-100/70">Message Form</p>
+          <form class="mt-5 grid gap-4" action="https://formspree.io/f/mrpzpwqb" method="POST">
+            <label class="grid gap-2">
+              <span class="text-sm font-semibold text-slate-200">Name</span>
+              <input type="text" name="name" required placeholder="Your name" class="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20" />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-semibold text-slate-200">Email</span>
+              <input type="email" name="email" required placeholder="you@example.com" class="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20" />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-semibold text-slate-200">Message</span>
+              <textarea name="message" rows="7" required placeholder="Tell us about your project or question" class="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20"></textarea>
+            </label>
+            <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-300">
+              Send Message
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollTop" type="button" aria-label="Scroll to top" class="fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-white shadow-glow transition duration-200 opacity-0 translate-y-3 pointer-events-none hover:bg-slate-900">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <footer class="border-t border-white/10 bg-slate-950/70 py-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 text-sm text-slate-400 sm:px-6 lg:px-8 sm:flex-row sm:items-center sm:justify-between">
+      <div>AMC Ahmedabad 2057 Master Plan</div>
+      <div class="text-slate-500">Contact page powered by Formspree.</div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80,
+    });
+
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('primary-nav');
+    const scrollTopButton = document.getElementById('scrollTop');
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        const hidden = navMenu.classList.toggle('hidden');
+        navToggle.setAttribute('aria-expanded', String(!hidden));
+      });
+    }
+
+    if (scrollTopButton) {
+      const updateScrollButton = () => {
+        const visible = window.scrollY > 500;
+        scrollTopButton.classList.toggle('opacity-0', !visible);
+        scrollTopButton.classList.toggle('translate-y-3', !visible);
+        scrollTopButton.classList.toggle('pointer-events-none', !visible);
+        scrollTopButton.classList.toggle('opacity-100', visible);
+        scrollTopButton.classList.toggle('translate-y-0', visible);
+      };
+
+      scrollTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      window.addEventListener('scroll', updateScrollButton, { passive: true });
+      updateScrollButton();
+    }
+  </script>
+</body>
 </html>

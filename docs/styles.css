@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   --bg: #f3f5f7;
@@ -628,6 +628,17 @@ main {
   gap: 18px;
 }
 
+.contact-photo {
+  width: min(100%, 300px);
+  display: block;
+  margin: 0 0 18px;
+  border-radius: 22px;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
 .info-badge {
   display: inline-flex;
   align-items: center;
@@ -921,3 +932,4 @@ main {
     bottom: 10px;
   }
 }
+
