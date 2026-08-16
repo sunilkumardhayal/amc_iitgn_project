@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #f3f5f7;
-  --bg-alt: #e9eef3;
-  --surface: rgba(255, 255, 255, 0.92);
+  --bg: #f8fafc;
+  --bg-alt: #eef4f9;
+  --surface: rgba(255, 255, 255, 0.94);
   --surface-strong: #ffffff;
-  --surface-dark: #0d1724;
-  --surface-darker: #07111b;
-  --ink: #102033;
-  --ink-soft: #526173;
-  --muted: #6b7b8f;
-  --line: rgba(16, 32, 51, 0.12);
-  --line-strong: rgba(255, 255, 255, 0.12);
-  --header: rgba(8, 16, 28, 0.9);
+  --surface-dark: #0f172a;
+  --surface-darker: #08101d;
+  --ink: #0f172a;
+  --ink-soft: #475569;
+  --ink-faint: #64748b;
+  --line: rgba(15, 23, 42, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --header: rgba(10, 18, 34, 0.92);
   --header-line: rgba(255, 255, 255, 0.08);
-  --accent: #d8a441;
-  --accent-2: #69c8ff;
-  --accent-3: #9de2ff;
-  --shadow: 0 22px 50px rgba(10, 21, 36, 0.12);
-  --shadow-dark: 0 24px 60px rgba(0, 0, 0, 0.36);
-  --radius-lg: 28px;
-  --radius-md: 20px;
+  --accent: #0284c7;
+  --accent-strong: #0ea5e9;
+  --accent-soft: #e0f2fe;
+  --status: #0369a1;
+  --status-soft: #e0f2fe;
+  --ok: #15803d;
+  --warn: #b45309;
+  --shadow: 0 22px 48px rgba(15, 23, 42, 0.10);
+  --shadow-dark: 0 24px 60px rgba(0, 0, 0, 0.34);
+  --radius-lg: 26px;
+  --radius-md: 18px;
   --radius-sm: 14px;
   --max: 1200px;
 }
@@ -38,29 +42,24 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  background:
-    radial-gradient(circle at top left, rgba(105, 200, 255, 0.12), transparent 28%),
-    radial-gradient(circle at 80% 12%, rgba(216, 164, 65, 0.14), transparent 22%),
-    linear-gradient(180deg, #f9fbfc 0%, var(--bg) 45%, #eef2f6 100%);
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
   padding-top: 92px;
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.12), transparent 28%),
+    radial-gradient(circle at 88% 8%, rgba(2, 132, 199, 0.10), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, var(--bg) 42%, #edf3f8 100%);
 }
 
 body[data-page='contact'] {
   background:
-    radial-gradient(circle at top left, rgba(105, 200, 255, 0.14), transparent 26%),
-    linear-gradient(180deg, #0a1320 0%, #0d1724 36%, #0a1018 100%);
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.12), transparent 22%),
+    linear-gradient(180deg, #07111d 0%, #0d1724 45%, #09111a 100%);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 button,
@@ -91,7 +90,7 @@ textarea {
   inset: 0 0 auto 0;
   z-index: 1100;
   background: var(--header);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--header-line);
 }
 
@@ -113,7 +112,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  color: #f4f7fb;
+  color: #f8fbfe;
   min-width: 0;
 }
 
@@ -122,16 +121,14 @@ textarea {
   height: 44px;
   display: grid;
   place-items: center;
-  border-radius: 16px;
-  background:
-    linear-gradient(145deg, rgba(216, 164, 65, 0.26), rgba(105, 200, 255, 0.2)),
-    rgba(255, 255, 255, 0.06);
+  border-radius: 15px;
+  background: linear-gradient(145deg, rgba(14, 165, 233, 0.34), rgba(2, 132, 199, 0.18));
   border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
   color: #fff;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .brand-text {
@@ -140,24 +137,23 @@ textarea {
 
 .brand-kicker {
   display: block;
-  font-size: 0.74rem;
+  font-size: 0.73rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: rgba(244, 247, 251, 0.58);
+  color: rgba(248, 251, 254, 0.56);
 }
 
 .brand-name {
   display: block;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.42rem;
+  font-size: 1.05rem;
+  font-weight: 800;
   line-height: 1.1;
-  font-weight: 700;
 }
 
 .brand-subtitle {
   display: block;
   font-size: 0.84rem;
-  color: rgba(244, 247, 251, 0.78);
+  color: rgba(248, 251, 254, 0.74);
 }
 
 .nav-toggle {
@@ -194,7 +190,7 @@ textarea {
   min-height: 44px;
   padding: 0 14px;
   border-radius: 999px;
-  color: rgba(244, 247, 251, 0.78);
+  color: rgba(248, 251, 254, 0.78);
   border: 1px solid transparent;
   transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
 }
@@ -208,10 +204,6 @@ textarea {
   transform: translateY(-1px);
 }
 
-main {
-  display: block;
-}
-
 .hero,
 .content-section,
 .contact-section {
@@ -220,18 +212,19 @@ main {
 }
 
 .hero {
-  padding: 56px 0 34px;
+  padding: 56px 0 32px;
 }
 
 .hero::before,
-.content-section::before {
+.content-section::before,
+.page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at top right, rgba(105, 200, 255, 0.18), transparent 26%),
-    radial-gradient(circle at 12% 10%, rgba(216, 164, 65, 0.16), transparent 24%);
   pointer-events: none;
+  background:
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.16), transparent 25%),
+    radial-gradient(circle at 10% 8%, rgba(2, 132, 199, 0.10), transparent 22%);
 }
 
 .hero-grid {
@@ -247,8 +240,8 @@ main {
 .card,
 .timeline-item,
 .deliverable,
-.contact-card,
-.form-card {
+.contact-form-wrap,
+.contact-info-wrap {
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);
   background: var(--surface);
@@ -265,36 +258,46 @@ main {
   gap: 10px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(105, 200, 255, 0.12);
-  color: #0b6b8f;
-  font-size: 0.82rem;
-  font-weight: 700;
+  background: var(--accent-soft);
+  color: var(--status);
+  font-size: 0.8rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
 }
 
 .hero h1,
 .page-title,
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  letter-spacing: -0.02em;
-  line-height: 0.98;
+.section-title,
+.contact-title {
   margin: 0;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-size: clamp(2.8rem, 6.5vw, 5.4rem);
   margin-top: 18px;
-  color: var(--ink);
 }
 
 .hero p,
 .section-lead,
-.page-lead {
-  margin: 18px 0 0;
+.page-lead,
+.contact-intro,
+.card p,
+.deliverable p,
+.timeline-item p,
+.panel p {
   color: var(--ink-soft);
-  font-size: 1.05rem;
-  max-width: 62ch;
+}
+
+.hero p,
+.section-lead,
+.page-lead,
+.contact-intro {
+  margin: 18px 0 0;
+  font-size: 1.04rem;
+  max-width: 68ch;
 }
 
 .hero-actions {
@@ -312,7 +315,7 @@ main {
   padding: 0 18px;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-weight: 700;
+  font-weight: 800;
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease;
   cursor: pointer;
 }
@@ -323,13 +326,13 @@ main {
 }
 
 .button-primary {
-  background: linear-gradient(135deg, #0f2940, #173652);
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: #fff;
-  box-shadow: 0 14px 30px rgba(15, 41, 64, 0.2);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.84);
   color: var(--ink);
   border-color: var(--line);
 }
@@ -344,21 +347,21 @@ main {
 .metric {
   padding: 18px;
   border-radius: 22px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(245, 248, 251, 0.98));
-  border: 1px solid rgba(16, 32, 51, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.96));
+  border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .metric strong {
   display: block;
-  font-size: 1.45rem;
-  line-height: 1;
+  font-size: 1.25rem;
+  line-height: 1.1;
   color: var(--ink);
 }
 
 .metric span {
   display: block;
   margin-top: 8px;
-  color: var(--ink-soft);
+  color: var(--ink-faint);
   font-size: 0.92rem;
 }
 
@@ -372,22 +375,16 @@ main {
 }
 
 .side-panel h2,
-.panel h2,
 .section-title,
-.contact-title {
-  font-family: 'Cormorant Garamond', serif;
-  margin: 0;
-  line-height: 1;
+.page-title,
+.contact-title,
+.info-block h3 {
+  font-weight: 900;
 }
 
 .side-panel h2 {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   color: var(--ink);
-}
-
-.side-panel p {
-  margin: 12px 0 0;
-  color: var(--ink-soft);
 }
 
 .stat-list {
@@ -399,20 +396,18 @@ main {
 }
 
 .stat-list li {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  display: grid;
+  gap: 4px;
   padding: 14px 0 0;
   border-top: 1px solid var(--line);
 }
 
 .stat-list strong {
-  min-width: 78px;
   color: var(--ink);
 }
 
 .stat-list span {
-  color: var(--ink-soft);
+  color: var(--ink-faint);
 }
 
 .content-section {
@@ -433,13 +428,7 @@ main {
 }
 
 .section-title {
-  font-size: clamp(2.2rem, 4vw, 3.6rem);
-  color: var(--ink);
-}
-
-.section-lead,
-.page-lead {
-  max-width: 65ch;
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
 }
 
 .grid-2 {
@@ -456,23 +445,26 @@ main {
 
 .card,
 .deliverable,
-.timeline-item {
+.timeline-item,
+.table-card {
   padding: 24px;
 }
 
 .card h3,
 .deliverable h3,
-.timeline-item h3 {
+.timeline-item h3,
+.table-card h3 {
   margin: 0;
   color: var(--ink);
-  font-size: 1.18rem;
+  font-size: 1.16rem;
 }
 
 .card p,
 .deliverable p,
-.timeline-item p {
+.timeline-item p,
+.table-card p,
+.panel p {
   margin: 10px 0 0;
-  color: var(--ink-soft);
 }
 
 .pill {
@@ -482,12 +474,74 @@ main {
   padding: 8px 12px;
   margin-bottom: 16px;
   border-radius: 999px;
-  background: rgba(216, 164, 65, 0.14);
-  color: #8a5c0f;
-  font-size: 0.8rem;
+  background: var(--accent-soft);
+  color: var(--status);
+  font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.callout {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08), rgba(224, 242, 254, 0.8));
+  border: 1px solid rgba(2, 132, 199, 0.18);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.brand-bar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.brand-chip {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.nav-links a strong,
+.brand-chip strong,
+.status-badge,
+.badge {
+  font-weight: 800;
+}
+
+.badge,
+.status-badge,
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.badge-status,
+.status-badge {
+  background: var(--status-soft);
+  color: var(--status);
+}
+
+.badge-ok {
+  background: rgba(21, 128, 61, 0.12);
+  color: var(--ok);
+}
+
+.badge-warn {
+  background: rgba(180, 83, 9, 0.14);
+  color: var(--warn);
 }
 
 .timeline {
@@ -497,20 +551,21 @@ main {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
+  grid-template-columns: 132px minmax(0, 1fr);
   gap: 18px;
   align-items: start;
 }
 
 .timeline-label {
-  font-weight: 800;
-  color: #0f2940;
+  font-weight: 900;
+  color: var(--status);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.82rem;
 }
 
 .page-hero {
+  position: relative;
   padding: 34px 0 18px;
 }
 
@@ -519,7 +574,7 @@ main {
 }
 
 .page-title {
-  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
   color: var(--ink);
 }
 
@@ -542,30 +597,27 @@ main {
 }
 
 .contact-title {
-  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
   color: #fff;
 }
 
 .contact-intro {
   margin-top: 14px;
   max-width: 62ch;
-  color: rgba(238, 245, 255, 0.78);
+  color: rgba(238, 245, 255, 0.8);
 }
 
 .contact-form-wrap,
 .contact-info-wrap {
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.11);
-  background: rgba(7, 17, 27, 0.78);
+  background: rgba(8, 16, 28, 0.78);
   box-shadow: var(--shadow-dark);
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(16px);
 }
 
 .contact-form-wrap {
   scroll-margin-top: 110px;
-}
-
-.contact-form-wrap {
   padding: 28px;
 }
 
@@ -583,7 +635,7 @@ main {
   margin-bottom: 8px;
   font-size: 0.9rem;
   font-weight: 700;
-  color: rgba(238, 245, 255, 0.84);
+  color: rgba(238, 245, 255, 0.86);
 }
 
 .contact-form input,
@@ -610,17 +662,17 @@ main {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: rgba(105, 200, 255, 0.58);
-  box-shadow: 0 0 0 4px rgba(105, 200, 255, 0.12);
+  border-color: rgba(14, 165, 233, 0.58);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
   background: rgba(255, 255, 255, 0.08);
 }
 
 .contact-submit {
   justify-self: start;
   margin-top: 4px;
-  background: linear-gradient(135deg, #d8a441, #efbf63);
-  color: #102033;
-  box-shadow: 0 18px 32px rgba(216, 164, 65, 0.22);
+  background: linear-gradient(135deg, var(--accent-strong), #38bdf8);
+  color: #fff;
+  box-shadow: 0 18px 32px rgba(14, 165, 233, 0.22);
 }
 
 .contact-info {
@@ -634,8 +686,8 @@ main {
   gap: 10px;
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(105, 200, 255, 0.12);
-  color: #cfefff;
+  background: rgba(14, 165, 233, 0.12);
+  color: #dff4ff;
   font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -649,15 +701,14 @@ main {
 
 .info-block h3 {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: #fff;
   line-height: 1.05;
 }
 
-.info-block p {
-  margin: 10px 0 0;
-  color: rgba(238, 245, 255, 0.78);
+.info-block p,
+.contact-note {
+  color: rgba(238, 245, 255, 0.76);
 }
 
 .contact-list {
@@ -690,15 +741,9 @@ main {
   font-weight: 700;
 }
 
-.contact-note {
-  margin: 0;
-  color: rgba(238, 245, 255, 0.66);
-  font-size: 0.95rem;
-}
-
 .footer {
   padding: 26px 0 42px;
-  color: var(--ink-soft);
+  color: var(--ink-faint);
 }
 
 .footer-inner {
@@ -737,10 +782,9 @@ main {
   bottom: 22px;
   min-height: 50px;
   padding: 0 18px;
-  background: linear-gradient(135deg, #0f2940, #173652);
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
   color: #fff;
   font-weight: 800;
-  letter-spacing: 0.01em;
 }
 
 .scroll-top {
@@ -748,8 +792,8 @@ main {
   bottom: 22px;
   width: 52px;
   height: 52px;
-  background: linear-gradient(135deg, #d8a441, #efbf63);
-  color: #13253b;
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  color: #fff;
   opacity: 0;
   pointer-events: none;
   transform: translateY(16px) scale(0.95);
@@ -769,25 +813,259 @@ main {
   box-shadow: 0 20px 38px rgba(8, 14, 22, 0.3);
 }
 
-.muted {
-  color: var(--muted);
+.map-placeholder {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 18% 30%, rgba(14, 165, 233, 0.18), transparent 12%),
+    radial-gradient(circle at 66% 62%, rgba(2, 132, 199, 0.16), transparent 16%),
+    linear-gradient(135deg, #f8fbff, #e8f0f8 48%, #dfeaf4 100%);
 }
 
-.dark-section {
-  color: #eef5ff;
+.map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.55;
 }
 
-.dark-section .panel,
-.dark-section .card,
-.dark-section .deliverable,
-.dark-section .timeline-item {
-  background: rgba(255, 255, 255, 0.78);
+.map-pin,
+.map-label {
+  position: absolute;
+  z-index: 2;
+}
+
+.map-pin {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #dc2626;
+  box-shadow: 0 0 0 10px rgba(220, 38, 38, 0.12);
+}
+
+.map-label {
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.map-stage {
+  display: grid;
+  gap: 12px;
+}
+
+.map-stage-title {
+  margin: 0;
+  font-size: 1.18rem;
+  color: var(--ink);
+}
+
+.map-stage-note {
+  margin: 0;
+  color: var(--ink-faint);
+}
+
+.gantt {
+  display: grid;
+  gap: 16px;
+}
+
+.gantt-row {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.gantt-label {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.gantt-track {
+  position: relative;
+  height: 22px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.gantt-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+}
+
+.gantt-bar.current {
+  background: linear-gradient(135deg, #0f172a, #0284c7);
+}
+
+.gantt-bar:nth-child(1) { left: 0%; width: 18%; }
+.gantt-bar:nth-child(2) { left: 18%; width: 24%; }
+.gantt-bar:nth-child(3) { left: 42%; width: 24%; }
+.gantt-bar:nth-child(4) { left: 66%; width: 18%; }
+.gantt-bar:nth-child(5) { left: 84%; width: 16%; }
+
+.timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.timeline-table th,
+.timeline-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.timeline-table th {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  background: rgba(224, 242, 254, 0.55);
+}
+
+.timeline-table td:first-child,
+.timeline-table th:first-child {
+  width: 34%;
+}
+
+.status-scheduled {
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--status);
+}
+
+.status-upcoming {
+  background: rgba(21, 128, 61, 0.10);
+  color: var(--ok);
+}
+
+.status-current {
+  background: rgba(180, 83, 9, 0.12);
+  color: var(--warn);
+}
+
+.overview-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.wp-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.wp-card {
+  padding: 22px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.wp-card h3 {
+  margin: 0;
+  color: var(--ink);
+}
+
+.wp-card p {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+}
+
+.status-banner {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(224, 242, 254, 0.95), rgba(255, 255, 255, 0.95));
+  border: 1px solid rgba(2, 132, 199, 0.18);
+  color: var(--status);
+  font-weight: 800;
+}
+
+.table-shell {
+  overflow-x: auto;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.deliverables-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.deliverables-table th,
+.deliverables-table td {
+  padding: 16px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.deliverables-table th {
+  background: rgba(224, 242, 254, 0.5);
+  color: var(--ink);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.deliverables-note,
+.section-note {
+  margin-top: 14px;
+  color: var(--ink-faint);
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.link-card {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+}
+
+.link-card strong {
+  display: block;
+  color: var(--ink);
+}
+
+.link-card span {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 0.92rem;
+  margin-top: 4px;
 }
 
 @media (max-width: 1080px) {
   .hero-grid,
   .contact-shell,
-  .grid-3 {
+  .grid-3,
+  .quick-links-grid {
     grid-template-columns: 1fr;
   }
 
@@ -848,7 +1126,8 @@ main {
     align-items: start;
   }
 
-  .timeline-item {
+  .timeline-item,
+  .gantt-row {
     grid-template-columns: 1fr;
   }
 
@@ -863,7 +1142,8 @@ main {
   .timeline-item,
   .contact-form-wrap,
   .contact-info-wrap,
-  .page-hero .panel {
+  .page-hero .panel,
+  .wp-card {
     padding: 22px;
     border-radius: 22px;
   }
@@ -890,7 +1170,7 @@ main {
   }
 
   .brand-name {
-    font-size: 1.2rem;
+    font-size: 0.98rem;
   }
 
   .hero {
@@ -898,12 +1178,12 @@ main {
   }
 
   .hero h1 {
-    font-size: clamp(2.5rem, 15vw, 4rem);
+    font-size: clamp(2.35rem, 13vw, 4rem);
   }
 
   .page-title,
   .contact-title {
-    font-size: clamp(2.35rem, 12vw, 3.6rem);
+    font-size: clamp(2.2rem, 11vw, 3.4rem);
   }
 
   .button {
