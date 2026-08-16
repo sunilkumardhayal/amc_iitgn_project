@@ -6,7 +6,7 @@
     <title>Overview | AMC Ahmedabad 2057 Master Plan</title>
     <meta
       name="description"
-      content="Project overview for the AMC Ahmedabad 2057 Master Plan and technical workflow."
+      content="Overview, context, and spatial planning framework for the AMC Ahmedabad 2057 Master Plan."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -15,11 +15,11 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="AMC Ahmedabad 2057 Master Plan home">
-          <span class="brand-mark">A</span>
+          <span class="brand-mark">AMC</span>
           <span class="brand-text">
-            <span class="brand-kicker">AMC Consultancy Project</span>
+            <span class="brand-kicker">AMC x IITGN Consultancy</span>
             <span class="brand-name">Ahmedabad 2057 Master Plan</span>
-            <span class="brand-subtitle">IIT Gandhinagar urban infrastructure partnership</span>
+            <span class="brand-subtitle">City-scale drainage and sewerage infrastructure roadmap</span>
           </span>
         </a>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
@@ -30,8 +30,8 @@
         <nav class="nav-links" id="primary-nav">
           <a href="index.html" data-page="home">Home</a>
           <a href="overview.html" data-page="overview">Overview</a>
-          <a href="deliverables.html" data-page="deliverables">Deliverables</a>
           <a href="scope.html" data-page="scope">Scope of Work</a>
+          <a href="deliverables.html" data-page="deliverables">Deliverables</a>
           <a href="timeline.html" data-page="timeline">Timeline</a>
           <a href="contact.html" data-page="contact">Contact Us</a>
         </nav>
@@ -46,48 +46,61 @@
         <div class="shell">
           <div class="panel">
             <span class="eyebrow">Project Overview</span>
-            <h1 class="page-title">Why this master plan matters</h1>
+            <h1 class="page-title">Planning context for a rapidly growing metropolitan system</h1>
             <p class="page-lead">
-              Ahmedabad is expanding rapidly. This project builds an integrated framework to assess existing sewerage
-              and storm water systems, forecast future demand, identify weak points, and shape a phased roadmap up to 2057.
+              Ahmedabad is expanding across core urban areas and growth corridors. A 30-year drainage and sewerage
+              roadmap is needed to align climate resilience, flood mitigation, wastewater management, and capital planning.
             </p>
           </div>
         </div>
       </section>
 
       <section class="content-section">
-        <div class="shell grid-2">
+        <div class="shell overview-grid">
+          <div class="grid-3">
+            <article class="card">
+              <span class="pill">Spatial Data & GIS Framework</span>
+              <h3>Digitize, standardize, and organize the city network</h3>
+              <p>
+                High-resolution elevation data, catchment delineation, asset registries, and drainage and sewerage layers
+                are brought into a consistent geodatabase for analysis and decision support.
+              </p>
+            </article>
+            <article class="card">
+              <span class="pill">Hydrodynamic & Hydraulic Simulation</span>
+              <h3>Assess network capacity under future rainfall and growth</h3>
+              <p>
+                City-scale computational modelling will test runoff response, sewer conveyance, pumping constraints, and
+                overflow risk under peak rainfall and urbanization scenarios.
+              </p>
+            </article>
+            <article class="card">
+              <span class="pill">Strategic Phasing & Policy</span>
+              <h3>Translate analysis into 5-year capital blocks</h3>
+              <p>
+                Prioritization will be organized into actionable capital investment phases that balance risk reduction,
+                service reliability, and expansion pressure.
+              </p>
+            </article>
+          </div>
+
           <article class="card">
-            <span class="pill">Integrated Planning</span>
-            <h3>One public hub for the whole project</h3>
-            <p>
-              Splitting the content into pages makes the site easier to navigate and more suitable for project updates,
-              downloads, and future expansion.
-            </p>
-          </article>
-          <article class="card">
-            <span class="pill">Technical Workflow</span>
-            <h3>Data, modelling, and implementation</h3>
-            <p>
-              The workflow combines GIS database development, hydraulic and hydrologic modelling, population and runoff
-              forecasting, master plan preparation, and implementation planning.
-            </p>
-          </article>
-          <article class="card">
-            <span class="pill">Designed For</span>
-            <h3>Clearer access and professional presentation</h3>
-            <p>
-              The structure is optimized for stakeholders who need quick access to the project story, the outputs, and
-              the next steps.
-            </p>
-          </article>
-          <article class="card">
-            <span class="pill">Outcome</span>
-            <h3>Better sequencing and better decisions</h3>
-            <p>
-              The final deliverable is not just a report. It is a practical roadmap for AMC that supports investment
-              planning, phasing, and resilient infrastructure priorities.
-            </p>
+            <span class="pill">GIS Map Integration</span>
+            <div class="map-stage">
+              <h3 class="map-stage-title">Ahmedabad Master Plan Spatial Extent</h3>
+              <p class="map-stage-note">
+                Placeholder for Leaflet or MapLibre integration with the AMC boundary, the Sabarmati River, major lakes,
+                and the drainage and sewerage network zones.
+              </p>
+              <div class="map-placeholder" aria-label="Ahmedabad Master Plan Spatial Extent map placeholder">
+                <span class="map-pin" style="left: 48%; top: 42%;"></span>
+                <span class="map-pin" style="left: 27%; top: 56%; background:#0ea5e9; box-shadow:0 0 0 10px rgba(14,165,233,0.12);"></span>
+                <span class="map-label" style="left: 12%; top: 14%;">AMC Boundary</span>
+                <span class="map-label" style="left: 62%; top: 22%;">Sabarmati Corridor</span>
+                <span class="map-label" style="left: 64%; top: 68%;">Urban Lakes Zone</span>
+                <span class="map-label" style="left: 18%; bottom: 16%;">Drainage / Sewerage Network Zones</span>
+              </div>
+            </div>
           </article>
         </div>
       </section>

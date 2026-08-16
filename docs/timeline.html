@@ -6,7 +6,7 @@
     <title>Timeline | AMC Ahmedabad 2057 Master Plan</title>
     <meta
       name="description"
-      content="Delivery timeline for the AMC Ahmedabad 2057 Master Plan."
+      content="12-month milestone roadmap and quarterly Gantt-style timeline for the AMC Ahmedabad 2057 Master Plan."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -15,11 +15,11 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="AMC Ahmedabad 2057 Master Plan home">
-          <span class="brand-mark">A</span>
+          <span class="brand-mark">AMC</span>
           <span class="brand-text">
-            <span class="brand-kicker">AMC Consultancy Project</span>
+            <span class="brand-kicker">AMC x IITGN Consultancy</span>
             <span class="brand-name">Ahmedabad 2057 Master Plan</span>
-            <span class="brand-subtitle">IIT Gandhinagar urban infrastructure partnership</span>
+            <span class="brand-subtitle">City-scale drainage and sewerage infrastructure roadmap</span>
           </span>
         </a>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
@@ -30,8 +30,8 @@
         <nav class="nav-links" id="primary-nav">
           <a href="index.html" data-page="home">Home</a>
           <a href="overview.html" data-page="overview">Overview</a>
-          <a href="deliverables.html" data-page="deliverables">Deliverables</a>
           <a href="scope.html" data-page="scope">Scope of Work</a>
+          <a href="deliverables.html" data-page="deliverables">Deliverables</a>
           <a href="timeline.html" data-page="timeline">Timeline</a>
           <a href="contact.html" data-page="contact">Contact Us</a>
         </nav>
@@ -45,51 +45,87 @@
       <section class="page-hero">
         <div class="shell">
           <div class="panel">
-            <span class="eyebrow">Delivery Plan</span>
-            <h1 class="page-title">12-month schedule with milestone-linked outputs</h1>
+            <span class="eyebrow">Timeline &amp; Milestones</span>
+            <h1 class="page-title">12-month roadmap with quarter-by-quarter execution</h1>
             <p class="page-lead">
-              The timeline keeps the work readable for public stakeholders while still showing the technical flow.
+              The current milestone indicator is Month 1: Inception and framework setup. Subsequent phases will be
+              released as the project advances through the year.
             </p>
           </div>
         </div>
       </section>
 
       <section class="content-section">
-        <div class="shell timeline">
-          <article class="timeline-item">
-            <div class="timeline-label">Month 1</div>
-            <div>
-              <h3>Inception and data collection</h3>
-              <p>Inception report, work plan, data request list, and stakeholder-gap assessment.</p>
+        <div class="shell overview-grid">
+          <article class="card">
+            <span class="pill">Gantt / Roadmap</span>
+            <div class="gantt" aria-label="12-month roadmap timeline">
+              <div class="gantt-row">
+                <div class="gantt-label">Q1</div>
+                <div class="gantt-track">
+                  <div class="gantt-bar current" title="Month 1-2: Project inception and data harmonization"></div>
+                </div>
+              </div>
+              <div class="gantt-row">
+                <div class="gantt-label">Q2</div>
+                <div class="gantt-track">
+                  <div class="gantt-bar" title="Month 3-5: Baseline field surveys and hydraulic characterization"></div>
+                </div>
+              </div>
+              <div class="gantt-row">
+                <div class="gantt-label">Q3</div>
+                <div class="gantt-track">
+                  <div class="gantt-bar" title="Month 6-8: Computational simulations and model calibration"></div>
+                </div>
+              </div>
+              <div class="gantt-row">
+                <div class="gantt-label">Q4</div>
+                <div class="gantt-track">
+                  <div class="gantt-bar" title="Month 9-12: Draft plan formulation and final handover"></div>
+                </div>
+              </div>
             </div>
+            <div class="callout">Current Milestone: Month 1 - Inception &amp; Framework Setup</div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-label">Months 2-3</div>
-            <div>
-              <h3>GIS database development</h3>
-              <p>Spatial database v1 with network layers, stations, STPs, watersheds, and land-use mapping.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-label">Months 4-5</div>
-            <div>
-              <h3>Demand forecasting</h3>
-              <p>Population, wastewater, runoff projections, and demand forecasting report.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-label">Months 6-8</div>
-            <div>
-              <h3>Hydraulic and hydrologic modelling</h3>
-              <p>Calibrated models, surcharge analysis, flooding assessment, and validation report.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-label">Months 9-12</div>
-            <div>
-              <h3>Master plan, roadmap, final handover</h3>
-              <p>Draft plan, final report, GIS files, models, and AMC presentation.</p>
-            </div>
+
+          <article class="card">
+            <span class="pill">Milestone Table</span>
+            <table class="timeline-table">
+              <thead>
+                <tr>
+                  <th>Period</th>
+                  <th>Milestone Focus</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Month 1-2</td>
+                  <td>Project inception and data harmonization</td>
+                  <td><span class="badge badge-status">Scheduled / Current</span></td>
+                </tr>
+                <tr>
+                  <td>Month 3-5</td>
+                  <td>Baseline field surveys and hydraulic characterization</td>
+                  <td><span class="badge badge-status">Upcoming</span></td>
+                </tr>
+                <tr>
+                  <td>Month 6-8</td>
+                  <td>Computational simulations and model calibration</td>
+                  <td><span class="badge badge-status">Upcoming</span></td>
+                </tr>
+                <tr>
+                  <td>Month 9-10</td>
+                  <td>Draft plan formulation and stakeholder workshops</td>
+                  <td><span class="badge badge-status">Upcoming</span></td>
+                </tr>
+                <tr>
+                  <td>Month 11-12</td>
+                  <td>Final master plan integration and handover</td>
+                  <td><span class="badge badge-status">Upcoming</span></td>
+                </tr>
+              </tbody>
+            </table>
           </article>
         </div>
       </section>
