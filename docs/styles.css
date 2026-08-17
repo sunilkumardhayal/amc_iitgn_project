@@ -1905,3 +1905,91 @@ body[data-page='contact'] .contact-list li {
 body[data-page='contact'] .brand-mark {
   display: none !important;
 }
+/* Final site-wide typography and contact-page light theme overrides */
+html,
+body,
+body * {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+body[data-page='contact'] {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+body[data-page='contact'] .site-header,
+body[data-page='contact'] .page-hero,
+body[data-page='contact'] .page-hero .panel,
+body[data-page='contact'] .contact-section,
+body[data-page='contact'] .contact-hero,
+body[data-page='contact'] .contact-info-wrap,
+body[data-page='contact'] .contact-form-wrap,
+body[data-page='contact'] .contact-list li,
+body[data-page='contact'] .contact-form input,
+body[data-page='contact'] .contact-form textarea {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+body[data-page='contact'] .page-hero .panel,
+body[data-page='contact'] .contact-info-wrap,
+body[data-page='contact'] .contact-form-wrap {
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+body[data-page='contact'] .page-title,
+body[data-page='contact'] .page-lead,
+body[data-page='contact'] .section-title,
+body[data-page='contact'] .contact-note,
+body[data-page='contact'] .contact-intro,
+body[data-page='contact'] .info-block h2,
+body[data-page='contact'] .info-block p,
+body[data-page='contact'] .contact-list .label,
+body[data-page='contact'] .contact-list a,
+body[data-page='contact'] .contact-list span,
+body[data-page='contact'] .field-label {
+  color: var(--text-primary) !important;
+}
+
+body[data-page='contact'] .brand-mark {
+  display: none !important;
+}
+
+body[data-page='contact'] .nav-links a {
+  color: rgba(31, 41, 55, 0.74) !important;
+}
+
+body[data-page='contact'] .nav-links a:hover,
+body[data-page='contact'] .nav-links a:focus-visible,
+body[data-page='contact'] .nav-links a.active {
+  color: var(--accent-primary) !important;
+  background: rgba(0, 80, 158, 0.08) !important;
+  border-color: rgba(0, 80, 158, 0.14) !important;
+}
+
+body[data-page='contact'] .contact-list li {
+  background: var(--bg-secondary) !important;
+}
+
+body[data-page='contact'] .contact-form input,
+body[data-page='contact'] .contact-form textarea {
+  border: 1px solid var(--border-color) !important;
+}
+
+body[data-page='contact'] .floating-contact {
+  background: var(--accent-primary) !important;
+  color: #ffffff !important;
+}
+
+body[data-page='contact'] .scroll-top {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+body[data-page='contact'] footer,
+body[data-page='contact'] .footer {
+  background: var(--bg-dark) !important;
+  color: #9ca3af !important;
+}
