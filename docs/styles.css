@@ -1993,3 +1993,28 @@ body[data-page='contact'] .footer {
   background: var(--bg-dark) !important;
   color: #9ca3af !important;
 }
+/* Hard override for contact hero background */
+body[data-page='contact'] .page-hero,
+body[data-page='contact'] .contact-section,
+body[data-page='contact'] .contact-hero {
+  background: var(--bg-primary) !important;
+}
+
+body[data-page='contact'] .page-hero::before,
+body[data-page='contact'] .contact-section::before,
+body[data-page='contact'] .contact-hero::before {
+  content: none !important;
+  background: none !important;
+}
+
+body[data-page='contact'] .page-hero .panel {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+body[data-page='contact'] .contact-hero .contact-intro,
+body[data-page='contact'] .contact-hero .page-lead,
+body[data-page='contact'] .contact-hero .page-title {
+  color: var(--text-primary) !important;
+}
