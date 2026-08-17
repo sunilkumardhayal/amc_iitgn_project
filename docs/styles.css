@@ -2018,3 +2018,156 @@ body[data-page='contact'] .contact-hero .page-lead,
 body[data-page='contact'] .contact-hero .page-title {
   color: var(--text-primary) !important;
 }
+/* Final mobile polish */
+@media (max-width: 820px) {
+  body {
+    padding-top: 76px;
+  }
+
+  .header-inner {
+    min-height: 76px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+    line-height: 1.05;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 24px;
+  }
+
+  .hero h1,
+  .page-title,
+  .contact-title {
+    font-size: clamp(2.05rem, 10vw, 2.85rem);
+    line-height: 1.05;
+  }
+
+  .hero p,
+  .page-lead,
+  .section-lead,
+  .contact-note,
+  .contact-intro {
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .hero-copy,
+  .panel,
+  .card,
+  .deliverable,
+  .timeline-item,
+  .contact-form-wrap,
+  .contact-info-wrap,
+  .page-hero .panel,
+  .wp-card,
+  .page-link-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .hero-grid,
+  .contact-shell,
+  .grid-3,
+  .page-links-grid,
+  .collaboration-banner,
+  body[data-page='home'] .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .collaboration-logos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .collaboration-logo {
+    min-width: 0;
+    min-height: 86px;
+    padding: 10px;
+  }
+
+  .page-link-card {
+    min-height: auto;
+  }
+
+  .contact-avatar {
+    width: 128px;
+    height: 128px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 14px;
+  }
+
+  .nav-links {
+    left: 10px;
+    right: 10px;
+    padding: 12px;
+  }
+
+  body[data-page='contact'] .nav-links {
+    background: #ffffff !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 20px 50px rgba(17, 24, 39, 0.12) !important;
+  }
+
+  body[data-page='contact'] .nav-links a {
+    color: var(--text-primary) !important;
+  }
+
+  .floating-contact {
+    display: none !important;
+  }
+
+  .scroll-top {
+    right: 12px;
+    bottom: 12px;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header-inner,
+  .shell {
+    width: min(var(--max), calc(100% - 16px));
+  }
+
+  .hero {
+    padding-top: 18px;
+  }
+
+  .hero h1,
+  .page-title,
+  .contact-title {
+    font-size: clamp(1.85rem, 12vw, 2.5rem);
+  }
+
+  .button,
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-badges {
+    gap: 8px;
+  }
+
+  .collaboration-logos {
+    gap: 8px;
+  }
+
+  .collaboration-divider {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+  }
+}
