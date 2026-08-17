@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -6,6 +6,44 @@
   <title>Contact Us | AMC Ahmedabad 2057 Master Plan</title>
   <meta name="description" content="Contact form and official contact details for the AMC Ahmedabad 2057 Master Plan." />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body[data-page="contact"] {
+      background: #ffffff !important;
+      color: #1f2937 !important;
+    }
+
+    body[data-page="contact"] .site-header,
+    body[data-page="contact"] .page-hero,
+    body[data-page="contact"] .page-hero .panel,
+    body[data-page="contact"] .contact-section,
+    body[data-page="contact"] .contact-hero,
+    body[data-page="contact"] .contact-info-wrap,
+    body[data-page="contact"] .contact-form-wrap,
+    body[data-page="contact"] .contact-list li,
+    body[data-page="contact"] .contact-form input,
+    body[data-page="contact"] .contact-form textarea {
+      background: #ffffff !important;
+      color: #1f2937 !important;
+    }
+
+    body[data-page="contact"] .page-hero::before,
+    body[data-page="contact"] .contact-section::before,
+    body[data-page="contact"] .contact-hero::before {
+      content: none !important;
+      background: none !important;
+    }
+
+    body[data-page="contact"] .page-hero .panel,
+    body[data-page="contact"] .contact-info-wrap,
+    body[data-page="contact"] .contact-form-wrap {
+      border: 1px solid #e5e7eb !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    body[data-page="contact"] .contact-list li {
+      background: #f8fafc !important;
+    }
+  </style>
 </head>
 <body data-page="contact">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -111,7 +149,7 @@
   </main>
 
   <a class="floating-contact" href="#contact-form">Contact Us</a>
-  <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top">â†‘</button>
 
   <footer class="footer">
     <div class="shell footer-inner">
