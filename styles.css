@@ -1867,3 +1867,10 @@ body[data-page='contact'] .contact-submit { background: var(--green); box-shadow
 body:not([data-page='home']) .floating-contact { display: none; }
 @media (max-width: 900px) { body:not([data-page='home']) .header-inner { width: min(100% - 36px, 720px); } body[data-page='scope'] .wp-grid, body[data-page='timeline'] .overview-grid, body[data-page='contact'] .contact-shell { grid-template-columns: 1fr 1fr; } body[data-page='scope'] .wp-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 720px) { body:not([data-page='home']) .header-inner { width: min(100% - 28px, 560px); } body:not([data-page='home']) .page-hero { padding: 44px 0 18px; } body:not([data-page='home']) .page-hero .panel { padding: 36px 24px; } body:not([data-page='home']) .page-title { font-size: clamp(2.7rem, 13vw, 4rem) !important; } body[data-page='scope'] .wp-grid, body[data-page='timeline'] .overview-grid, body[data-page='contact'] .contact-shell { grid-template-columns: 1fr; } body[data-page='overview'] .overview-grid > .grid-3 { grid-template-columns: 1fr; } body:not([data-page='home']) .content-section { padding: 38px 0 70px; } body:not([data-page='home']) .card, body:not([data-page='home']) .wp-card, body:not([data-page='home']) .contact-info-wrap, body:not([data-page='home']) .contact-form-wrap { padding: 24px; } }
+
+/* Contact hero and desktop navigation correction */
+.nav-toggle { display: none; }
+body[data-page='contact'] .page-hero { background: linear-gradient(120deg, #f6f5ef 0%, #e9eee8 100%) !important; }
+body[data-page='contact'] .page-hero .panel { background: var(--green) !important; border: 0 !important; box-shadow: 0 22px 44px rgba(13,46,38,.14) !important; }
+@media (max-width: 720px) { .nav-toggle { display: inline-grid; } }
+
