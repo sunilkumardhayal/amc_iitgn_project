@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap');
 
 :root {
   --bg-primary: #ffffff;
@@ -1853,4 +1852,56 @@ body[data-page='contact'] .footer a:hover {
     width: 150px;
     height: 150px;
   }
+}
+
+/* Global typography override */
+body,
+button,
+input,
+textarea,
+select,
+.brand-name,
+.hero h1,
+.page-title,
+.section-title,
+.side-panel h2,
+.panel h2,
+.contact-title,
+.info-block h3,
+.hero p,
+.page-lead,
+.section-lead,
+.contact-note,
+.pill,
+.eyebrow,
+.nav-links a,
+.footer,
+.muted,
+.brand,
+.brand-kicker,
+.brand-subtitle {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+body[data-page='contact'] {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+body[data-page='contact'] .site-header,
+body[data-page='contact'] .contact-hero,
+body[data-page='contact'] .contact-info-wrap,
+body[data-page='contact'] .contact-form-wrap,
+body[data-page='contact'] .contact-list li,
+body[data-page='contact'] .contact-form input,
+body[data-page='contact'] .contact-form textarea {
+  background: var(--bg-primary) !important;
+}
+
+body[data-page='contact'] .contact-list li {
+  background: var(--bg-secondary) !important;
+}
+
+body[data-page='contact'] .brand-mark {
+  display: none !important;
 }
