@@ -78,23 +78,23 @@
   </style>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="home" class="bg-white font-sans text-slate-800 antialiased selection:bg-amber-400/30 selection:text-white">
-  <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-slate-950" href="#main">Skip to content</a>
+<body data-page="home" class="font-sans antialiased">
+  <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:px-4 focus:py-2" href="#main">Skip to content</a>
 
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/65 glass">
+  <header class="sticky top-0 z-50 border-b glass">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
       <a href="index.html" class="flex min-w-0 items-center gap-3">
-        <div class="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-white/10 text-sm font-black tracking-[0.24em] text-white shadow-glow">AMC</div>
-        <div class="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-cyan-400/10 text-[0.62rem] font-black tracking-[0.24em] text-cyan-100 shadow-glow">IITGN</div>
+        <div class="grid h-12 w-12 place-items-center rounded-2xl border text-sm font-black tracking-[0.24em] shadow-glow">AMC</div>
+        <div class="grid h-12 w-12 place-items-center rounded-2xl border text-[0.62rem] font-black tracking-[0.24em] shadow-glow">IITGN</div>
         <div class="min-w-0">
-          <div class="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-cyan-100/65">AMC Consultancy Project</div>
-          <div class="truncate text-base font-extrabold text-white sm:text-lg">Ahmedabad 2057 Master Plan</div>
-          <div class="truncate text-xs text-slate-100 sm:text-sm">IIT Gandhinagar urban infrastructure partnership</div>
+          <div class="text-[0.7rem] font-semibold uppercase tracking-[0.28em]">AMC Consultancy Project</div>
+          <div class="truncate text-base font-extrabold sm:text-lg">Ahmedabad 2057 Master Plan</div>
+          <div class="truncate text-xs sm:text-sm">IIT Gandhinagar urban infrastructure partnership</div>
         </div>
       </a>
 
       <div class="flex items-center gap-3 md:hidden">
-        <button id="navToggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/8 text-white transition hover:bg-white/12" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <button id="navToggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border transition" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <svg id="navIconOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -102,113 +102,113 @@
         </button>
       </div>
 
-      <nav id="primary-nav" class="hidden w-full flex-col gap-2 rounded-3xl border border-white/10 bg-slate-950/95 p-3 shadow-glow md:flex md:w-auto md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
-        <a href="index.html" data-page="home" class="rounded-full px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10">Home</a>
-        <a href="overview.html" data-page="overview" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10 hover:text-white">Overview</a>
-        <a href="scope.html" data-page="scope" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10 hover:text-white">Scope</a>
-        <a href="deliverables.html" data-page="deliverables" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10 hover:text-white">Deliverables</a>
-        <a href="timeline.html" data-page="timeline" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10 hover:text-white">Timeline</a>
-        <a href="contact.html" data-page="contact" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/10 hover:text-white">Contact Us</a>
+      <nav id="primary-nav" class="hidden w-full flex-col gap-2 rounded-3xl border p-3 shadow-glow md:flex md:w-auto md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
+        <a href="index.html" data-page="home" class="rounded-full px-4 py-2 text-sm font-semibold transition">Home</a>
+        <a href="overview.html" data-page="overview" class="rounded-full px-4 py-2 text-sm font-semibold transition">Overview</a>
+        <a href="scope.html" data-page="scope" class="rounded-full px-4 py-2 text-sm font-semibold transition">Scope</a>
+        <a href="deliverables.html" data-page="deliverables" class="rounded-full px-4 py-2 text-sm font-semibold transition">Deliverables</a>
+        <a href="timeline.html" data-page="timeline" class="rounded-full px-4 py-2 text-sm font-semibold transition">Timeline</a>
+        <a href="contact.html" data-page="contact" class="rounded-full px-4 py-2 text-sm font-semibold transition">Contact Us</a>
       </nav>
     </div>
   </header>
 
   <main id="main" class="relative overflow-hidden">
     <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 opacity-90">
-      <div class="absolute inset-x-0 top-0 h-[36rem] bg-gradient-to-b from-slate-950 via-slate-950/95 to-transparent"></div>
-      <div class="absolute left-1/2 top-[-10rem] h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl"></div>
-      <div class="absolute right-[-8rem] top-[18rem] h-[22rem] w-[22rem] rounded-full bg-amber-400/10 blur-3xl"></div>
+      <div class="absolute inset-x-0 top-0 h-[36rem]"></div>
+      <div class="absolute left-1/2 top-[-10rem] h-[34rem] w-[34rem] -translate-x-1/2 rounded-full blur-3xl"></div>
+      <div class="absolute right-[-8rem] top-[18rem] h-[22rem] w-[22rem] rounded-full blur-3xl"></div>
     </div>
 
-    <section class="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 lg:px-8 lg:pt-14" data-aos="fade-up">
+    <section class="hero-bg mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 lg:px-8 lg:pt-14" data-aos="fade-up">
       <div class="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8">
-        <article class="relative overflow-hidden rounded-[2rem] border border-white/15 bg-gradient-to-br from-blue-950 via-sky-900 to-cyan-700 p-6 shadow-glow glass sm:p-8 lg:p-10">
+        <article class="relative overflow-hidden rounded-[2rem] border p-6 shadow-glow glass sm:p-8 lg:p-10">
           <div class="absolute inset-0 hero-mesh opacity-35"></div>
           <div class="relative z-10">
             <div class="mb-6 flex flex-wrap gap-2">
-              <span class="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-cyan-100">Urban Infrastructure</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-slate-200">GIS</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-slate-200">Modelling</span>
+              <span class="rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.24em]">Urban Infrastructure</span>
+              <span class="rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.24em]">GIS</span>
+              <span class="rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-[0.24em]">Modelling</span>
             </div>
 
-            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-100/70">AMC x IITGN Consultancy - Ahmedabad 2057 Master Plan</p>
-            <h1 class="max-w-4xl text-4xl font-black leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-7xl">
+            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em]">AMC x IITGN Consultancy - Ahmedabad 2057 Master Plan</p>
+            <h1 class="max-w-4xl text-4xl font-black leading-[0.95] tracking-[-0.04em] sm:text-5xl lg:text-7xl">
               Planning Ahmedabad's Next 30 Years.
             </h1>
-            <p class="mt-6 max-w-2xl text-base leading-8 text-slate-100 sm:text-lg">
+            <p class="mt-6 max-w-2xl text-base leading-8 sm:text-lg">
               This website presents the AMC x IIT Gandhinagar consultancy project for a 2027 to 2057 master plan, bringing together spatial data, hydraulic modelling, demand forecasting, and phased implementation planning.
             </p>
 
             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="scope.html" class="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-300">
+              <a href="scope.html" class="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold shadow-lg transition hover:-translate-y-0.5">
                 Explore Project Scope
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </a>
-              <a href="timeline.html" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/8 px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-white/12">
+              <a href="timeline.html" class="inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3 text-sm font-bold transition hover:-translate-y-0.5">
                 View 12-Month Timeline
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 text-amber-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </a>
             </div>
 
             <div class="mt-8 grid gap-3 sm:grid-cols-3">
-              <div class="rounded-2xl border border-white/10 bg-white/6 p-4 backdrop-blur-xl">
-                <div class="text-xs font-semibold uppercase tracking-[0.26em] text-cyan-100/70">Delivery framework</div>
-                <div class="mt-2 text-sm text-slate-200">Milestone-linked outputs with institutional review points.</div>
+              <div class="rounded-2xl border p-4 backdrop-blur-xl">
+                <div class="text-xs font-semibold uppercase tracking-[0.26em]">Delivery framework</div>
+                <div class="mt-2 text-sm">Milestone-linked outputs with institutional review points.</div>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-white/6 p-4 backdrop-blur-xl">
-                <div class="text-xs font-semibold uppercase tracking-[0.26em] text-cyan-100/70">Planning lens</div>
-                <div class="mt-2 text-sm text-slate-200">GIS, hydraulic modelling, forecasting, and phased delivery.</div>
+              <div class="rounded-2xl border p-4 backdrop-blur-xl">
+                <div class="text-xs font-semibold uppercase tracking-[0.26em]">Planning lens</div>
+                <div class="mt-2 text-sm">GIS, hydraulic modelling, forecasting, and phased delivery.</div>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-white/6 p-4 backdrop-blur-xl">
-                <div class="text-xs font-semibold uppercase tracking-[0.26em] text-cyan-100/70">Audience</div>
-                <div class="mt-2 text-sm text-slate-200">AMC project teams, reviewers, and technical stakeholders.</div>
+              <div class="rounded-2xl border p-4 backdrop-blur-xl">
+                <div class="text-xs font-semibold uppercase tracking-[0.26em]">Audience</div>
+                <div class="mt-2 text-sm">AMC project teams, reviewers, and technical stakeholders.</div>
               </div>
             </div>
           </div>
         </article>
 
         <aside class="grid gap-6">
-          <div class="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass" data-aos="fade-left">
+          <div class="rounded-[2rem] border p-6 shadow-glow glass" data-aos="fade-left">
             <div class="mb-4 flex items-center justify-between">
               <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-100/70">Project snapshot</p>
-                <h2 class="mt-2 text-2xl font-black text-white">Ahmedabad Municipal Corporation x IIT Gandhinagar</h2>
+                <p class="text-xs font-semibold uppercase tracking-[0.3em]">Project snapshot</p>
+                <h2 class="mt-2 text-2xl font-black">Ahmedabad Municipal Corporation x IIT Gandhinagar</h2>
               </div>
-              <div class="rounded-2xl border border-amber-400/20 bg-amber-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-amber-200">2027-2057</div>
+              <div class="rounded-2xl border px-4 py-2 text-xs font-bold uppercase tracking-[0.24em]">2027-2057</div>
             </div>
-            <p class="max-w-xl text-sm leading-7 text-slate-100">
+            <p class="max-w-xl text-sm leading-7">
               A coordinated planning framework for assessing current systems, forecasting growth, and defining resilient infrastructure priorities through 2057.
             </p>
 
             <div class="mt-6 grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-stretch">
-              <div class="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-5 text-center">
-                <div class="grid h-16 w-16 place-items-center rounded-2xl bg-white/10 text-sm font-black tracking-[0.24em] text-white">AMC</div>
-                <div class="mt-3 text-xs font-semibold uppercase tracking-[0.24em] text-slate-100">Ahmedabad Municipal Corporation</div>
+              <div class="flex flex-col items-center justify-center rounded-2xl border p-5 text-center">
+                <div class="grid h-16 w-16 place-items-center rounded-2xl text-sm font-black tracking-[0.24em]">AMC</div>
+                <div class="mt-3 text-xs font-semibold uppercase tracking-[0.24em]">Ahmedabad Municipal Corporation</div>
               </div>
-              <div class="hidden sm:flex items-center justify-center text-lg font-black uppercase tracking-[0.35em] text-slate-400">x</div>
-              <div class="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-5 text-center">
-                <div class="grid h-16 w-16 place-items-center rounded-2xl bg-cyan-400/10 text-[0.62rem] font-black tracking-[0.24em] text-cyan-100">IITGN</div>
-                <div class="mt-3 text-xs font-semibold uppercase tracking-[0.24em] text-slate-100">Indian Institute of Technology Gandhinagar</div>
+              <div class="hidden sm:flex items-center justify-center text-lg font-black uppercase tracking-[0.35em]">x</div>
+              <div class="flex flex-col items-center justify-center rounded-2xl border p-5 text-center">
+                <div class="grid h-16 w-16 place-items-center rounded-2xl text-[0.62rem] font-black tracking-[0.24em]">IITGN</div>
+                <div class="mt-3 text-xs font-semibold uppercase tracking-[0.24em]">Indian Institute of Technology Gandhinagar</div>
               </div>
             </div>
           </div>
 
-          <div class="rounded-[2rem] border border-white/10 bg-white/6 p-6 shadow-glow glass" data-aos="fade-left" data-aos-delay="100">
+          <div class="rounded-[2rem] border p-6 shadow-glow glass" data-aos="fade-left" data-aos-delay="100">
             <div class="flex items-center justify-between gap-3">
               <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-100/70">Current scope</p>
-                <h3 class="mt-2 text-xl font-bold text-white">Drainage, sewerage, GIS, and modelling</h3>
+                <p class="text-xs font-semibold uppercase tracking-[0.3em]">Current scope</p>
+                <h3 class="mt-2 text-xl font-bold">Drainage, sewerage, GIS, and modelling</h3>
               </div>
-              <div class="rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-slate-200">City scale</div>
+              <div class="rounded-2xl border px-4 py-2 text-xs font-bold uppercase tracking-[0.24em]">City scale</div>
             </div>
-            <ul class="mt-5 space-y-3 text-sm text-slate-100">
-              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-cyan-300"></span><span>Flood-risk reduction</span></li>
-              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-amber-300"></span><span>Network augmentation roadmap</span></li>
-              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-300"></span><span>Climate-resilient city planning</span></li>
+            <ul class="mt-5 space-y-3 text-sm">
+              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full"></span><span>Flood-risk reduction</span></li>
+              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full"></span><span>Network augmentation roadmap</span></li>
+              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full"></span><span>Climate-resilient city planning</span></li>
             </ul>
           </div>
         </aside>
@@ -217,62 +217,62 @@
 
     <section class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4" data-aos="fade-up">
-        <article class="rounded-[1.75rem] border border-white/10 bg-white/6 p-5 shadow-glow glass">
+        <article class="rounded-[1.75rem] border p-5 shadow-glow glass">
           <div class="flex items-start gap-4">
-            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-cyan-400/12 text-cyan-100">
+            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 4.5h10.5A2.25 2.25 0 0 1 19.5 6.75v10.5A2.25 2.25 0 0 1 17.25 19.5H6.75A2.25 2.25 0 0 1 4.5 17.25V6.75A2.25 2.25 0 0 1 6.75 4.5Z" />
               </svg>
             </div>
             <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-100/70">30-Year Horizon</p>
-              <p class="mt-2 text-sm leading-6 text-slate-100">A long-range 2027 to 2057 master plan for Ahmedabad's drainage and sewerage future.</p>
+              <p class="text-sm font-semibold uppercase tracking-[0.24em]">30-Year Horizon</p>
+              <p class="mt-2 text-sm leading-6">A long-range 2027 to 2057 master plan for Ahmedabad's drainage and sewerage future.</p>
             </div>
           </div>
         </article>
 
-        <article class="rounded-[1.75rem] border border-white/10 bg-white/6 p-5 shadow-glow glass">
+        <article class="rounded-[1.75rem] border p-5 shadow-glow glass">
           <div class="flex items-start gap-4">
-            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-amber-400/12 text-amber-200">
+            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h7.5M8.25 12h7.5M8.25 17.25h7.5" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 4.5h10.5A2.25 2.25 0 0 1 19.5 6.75v10.5A2.25 2.25 0 0 1 17.25 19.5H6.75A2.25 2.25 0 0 1 4.5 17.25V6.75A2.25 2.25 0 0 1 6.75 4.5Z" />
               </svg>
             </div>
             <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200/80">12-Month Schedule</p>
-              <p class="mt-2 text-sm leading-6 text-slate-100">A delivery schedule with milestone-linked outputs and review checkpoints.</p>
+              <p class="text-sm font-semibold uppercase tracking-[0.24em]">12-Month Schedule</p>
+              <p class="mt-2 text-sm leading-6">A delivery schedule with milestone-linked outputs and review checkpoints.</p>
             </div>
           </div>
         </article>
 
-        <article class="rounded-[1.75rem] border border-white/10 bg-white/6 p-5 shadow-glow glass">
+        <article class="rounded-[1.75rem] border p-5 shadow-glow glass">
           <div class="flex items-start gap-4">
-            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-emerald-400/12 text-emerald-200">
+            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 7.5h6M9 12h6M9 16.5h6" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6.75A2.25 2.25 0 0 1 6.75 4.5h10.5A2.25 2.25 0 0 1 19.5 6.75v10.5A2.25 2.25 0 0 1 17.25 19.5H6.75A2.25 2.25 0 0 1 4.5 17.25V6.75Z" />
               </svg>
             </div>
             <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200/80">6 Work Packages</p>
-              <p class="mt-2 text-sm leading-6 text-slate-100">From data collection to implementation planning, the project is broken into six coordinated packages.</p>
+              <p class="text-sm font-semibold uppercase tracking-[0.24em]">6 Work Packages</p>
+              <p class="mt-2 text-sm leading-6">From data collection to implementation planning, the project is broken into six coordinated packages.</p>
             </div>
           </div>
         </article>
 
-        <article class="rounded-[1.75rem] border border-white/10 bg-white/6 p-5 shadow-glow glass">
+        <article class="rounded-[1.75rem] border p-5 shadow-glow glass">
           <div class="flex items-start gap-4">
-            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-sky-400/12 text-sky-100">
+            <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.25h15M4.5 15.75h15" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 4.5v15m9-15v15" />
               </svg>
             </div>
             <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-sky-100/80">Full City Extent</p>
-              <p class="mt-2 text-sm leading-6 text-slate-100">Drainage and sewerage planning for the full AMC network, with GIS-ready spatial layers.</p>
+              <p class="text-sm font-semibold uppercase tracking-[0.24em]">Full City Extent</p>
+              <p class="mt-2 text-sm leading-6">Drainage and sewerage planning for the full AMC network, with GIS-ready spatial layers.</p>
             </div>
           </div>
         </article>
@@ -280,24 +280,24 @@
     </section>
 
     <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" data-aos="fade-up">
-      <div class="rounded-[2rem] border border-white/10 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/90 p-6 shadow-glow glass sm:p-8 lg:p-10">
+      <div class="home-surface rounded-[2rem] border p-6 shadow-glow glass sm:p-8 lg:p-10">
         <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div class="max-w-3xl">
-            <p class="text-xs font-semibold uppercase tracking-[0.32em] text-cyan-100/70">Institutional collaboration</p>
-            <h2 class="mt-3 text-2xl font-black text-white sm:text-3xl">AMC x IITGN</h2>
-            <p class="mt-4 text-sm leading-7 text-slate-100 sm:text-base">
+            <p class="text-xs font-semibold uppercase tracking-[0.32em]">Institutional collaboration</p>
+            <h2 class="mt-3 text-2xl font-black sm:text-3xl">AMC x IITGN</h2>
+            <p class="mt-4 text-sm leading-7 sm:text-base">
               A shared planning framework for public-sector delivery, technical review, and long-range urban infrastructure decisions.
             </p>
           </div>
           <div class="grid gap-3 sm:grid-cols-3 lg:min-w-[34rem] lg:grid-cols-[1fr_auto_1fr]">
-            <div class="rounded-3xl border border-white/10 bg-white/6 p-5 text-center">
-              <div class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-white/10 bg-white/10 text-sm font-black tracking-[0.24em] text-white">AMC</div>
-              <div class="mt-3 text-xs font-bold uppercase tracking-[0.24em] text-slate-100">Municipal partner</div>
+            <div class="rounded-3xl border p-5 text-center">
+              <div class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border text-sm font-black tracking-[0.24em]">AMC</div>
+              <div class="mt-3 text-xs font-bold uppercase tracking-[0.24em]">Municipal partner</div>
             </div>
-            <div class="hidden items-center justify-center text-xl font-black uppercase tracking-[0.42em] text-slate-400 lg:flex">x</div>
-            <div class="rounded-3xl border border-white/10 bg-cyan-400/10 p-5 text-center">
-              <div class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-cyan-300/20 bg-slate-950/40 text-[0.62rem] font-black tracking-[0.24em] text-cyan-100">IITGN</div>
-              <div class="mt-3 text-xs font-bold uppercase tracking-[0.24em] text-cyan-100/80">Technical partner</div>
+            <div class="hidden items-center justify-center text-xl font-black uppercase tracking-[0.42em] lg:flex">x</div>
+            <div class="rounded-3xl border p-5 text-center">
+              <div class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border text-[0.62rem] font-black tracking-[0.24em]">IITGN</div>
+              <div class="mt-3 text-xs font-bold uppercase tracking-[0.24em]">Technical partner</div>
             </div>
           </div>
         </div>
@@ -306,18 +306,18 @@
 
     <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" data-aos="fade-up">
       <div class="grid gap-6 lg:grid-cols-2">
-        <article class="rounded-[2rem] border border-white/10 bg-white/6 p-6 shadow-glow glass sm:p-8">
-          <p class="text-xs font-semibold uppercase tracking-[0.32em] text-cyan-100/70">Project Overview</p>
-          <h2 class="mt-3 text-3xl font-black text-white">Why this master plan matters</h2>
-          <p class="mt-4 text-base leading-8 text-slate-100">
+        <article class="rounded-[2rem] border p-6 shadow-glow glass sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-[0.32em]">Project Overview</p>
+          <h2 class="mt-3 text-3xl font-black">Why this master plan matters</h2>
+          <p class="mt-4 text-base leading-8">
             Ahmedabad is expanding rapidly. This project creates an integrated framework to assess existing sewerage and storm water systems, forecast future demand, identify weak points, and shape a phased roadmap up to 2057.
           </p>
         </article>
 
-        <article class="rounded-[2rem] border border-white/10 bg-white/6 p-6 shadow-glow glass sm:p-8">
-          <p class="text-xs font-semibold uppercase tracking-[0.32em] text-amber-200/80">Technical Workflow</p>
-          <h2 class="mt-3 text-3xl font-black text-white">GIS database, modelling, forecasting, and planning</h2>
-          <p class="mt-4 text-base leading-8 text-slate-100">
+        <article class="rounded-[2rem] border p-6 shadow-glow glass sm:p-8">
+          <p class="text-xs font-semibold uppercase tracking-[0.32em]">Technical Workflow</p>
+          <h2 class="mt-3 text-3xl font-black">GIS database, modelling, forecasting, and planning</h2>
+          <p class="mt-4 text-base leading-8">
             The workflow combines GIS database development, hydraulic and hydrologic modelling, population and runoff forecasting, master plan preparation, and implementation planning into one coordinated delivery sequence.
           </p>
         </article>
@@ -326,19 +326,19 @@
 
     <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8" data-aos="fade-up">
       <div class="mb-8 max-w-3xl">
-        <p class="text-xs font-semibold uppercase tracking-[0.32em] text-cyan-100/70">A public-facing project hub</p>
-        <h2 class="mt-3 text-3xl font-black text-white sm:text-4xl">Each page focuses on one part of the work so the information is easier to scan, share, and update.</h2>
+        <p class="text-xs font-semibold uppercase tracking-[0.32em]">A public-facing project hub</p>
+        <h2 class="mt-3 text-3xl font-black sm:text-4xl">Each page focuses on one part of the work so the information is easier to scan, share, and update.</h2>
       </div>
 
       <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <a href="overview.html" class="group rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass card-hover">
+        <a href="overview.html" class="group rounded-[1.75rem] border p-6 shadow-glow glass card-hover">
           <div class="flex items-start justify-between gap-4">
             <div>
-              <span class="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-cyan-100">Overview</span>
-              <h3 class="mt-4 text-2xl font-bold text-white">Why the master plan matters</h3>
-              <p class="mt-3 text-sm leading-7 text-slate-100">See the project intent, technical workflow, and planning context in one clean summary.</p>
+              <span class="rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.24em]">Overview</span>
+              <h3 class="mt-4 text-2xl font-bold">Why the master plan matters</h3>
+              <p class="mt-3 text-sm leading-7">See the project intent, technical workflow, and planning context in one clean summary.</p>
             </div>
-            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-200 transition group-hover:translate-x-1 group-hover:bg-white/12 group-hover:text-white">
+            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition group-hover:translate-x-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -346,14 +346,14 @@
           </div>
         </a>
 
-        <a href="scope.html" class="group rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass card-hover">
+        <a href="scope.html" class="group rounded-[1.75rem] border p-6 shadow-glow glass card-hover">
           <div class="flex items-start justify-between gap-4">
             <div>
-              <span class="rounded-full border border-amber-400/20 bg-amber-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-amber-200">Scope</span>
-              <h3 class="mt-4 text-2xl font-bold text-white">Design boundaries and technical scope</h3>
-              <p class="mt-3 text-sm leading-7 text-slate-100">Understand the spatial, hydraulic, and implementation boundaries that define the master plan.</p>
+              <span class="rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.24em]">Scope</span>
+              <h3 class="mt-4 text-2xl font-bold">Design boundaries and technical scope</h3>
+              <p class="mt-3 text-sm leading-7">Understand the spatial, hydraulic, and implementation boundaries that define the master plan.</p>
             </div>
-            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-200 transition group-hover:translate-x-1 group-hover:bg-white/12 group-hover:text-white">
+            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition group-hover:translate-x-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -361,14 +361,14 @@
           </div>
         </a>
 
-        <a href="timeline.html" class="group rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass card-hover">
+        <a href="timeline.html" class="group rounded-[1.75rem] border p-6 shadow-glow glass card-hover">
           <div class="flex items-start justify-between gap-4">
             <div>
-              <span class="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-emerald-200">Timeline</span>
-              <h3 class="mt-4 text-2xl font-bold text-white">12-month delivery schedule</h3>
-              <p class="mt-3 text-sm leading-7 text-slate-100">Follow the milestone-linked schedule and the phases that organize the project delivery.</p>
+              <span class="rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.24em]">Timeline</span>
+              <h3 class="mt-4 text-2xl font-bold">12-month delivery schedule</h3>
+              <p class="mt-3 text-sm leading-7">Follow the milestone-linked schedule and the phases that organize the project delivery.</p>
             </div>
-            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-200 transition group-hover:translate-x-1 group-hover:bg-white/12 group-hover:text-white">
+            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition group-hover:translate-x-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -376,14 +376,14 @@
           </div>
         </a>
 
-        <a href="deliverables.html" class="group rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass card-hover md:col-span-1 xl:col-span-1">
+        <a href="deliverables.html" class="group rounded-[1.75rem] border p-6 shadow-glow glass card-hover md:col-span-1 xl:col-span-1">
           <div class="flex items-start justify-between gap-4">
             <div>
-              <span class="rounded-full border border-white/15 bg-white/6 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-slate-200">Deliverables</span>
-              <h3 class="mt-4 text-2xl font-bold text-white">Download-ready outputs</h3>
-              <p class="mt-3 text-sm leading-7 text-slate-100">Keep future PDFs, GIS layers, and reports organized under a dedicated deliverables page.</p>
+              <span class="rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.24em]">Deliverables</span>
+              <h3 class="mt-4 text-2xl font-bold">Download-ready outputs</h3>
+              <p class="mt-3 text-sm leading-7">Keep future PDFs, GIS layers, and reports organized under a dedicated deliverables page.</p>
             </div>
-            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-200 transition group-hover:translate-x-1 group-hover:bg-white/12 group-hover:text-white">
+            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition group-hover:translate-x-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -391,14 +391,14 @@
           </div>
         </a>
 
-        <a href="contact.html" class="group rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-6 shadow-glow glass card-hover md:col-span-1 xl:col-span-1">
+        <a href="contact.html" class="group rounded-[1.75rem] border p-6 shadow-glow glass card-hover md:col-span-1 xl:col-span-1">
           <div class="flex items-start justify-between gap-4">
             <div>
-              <span class="rounded-full border border-white/15 bg-white/6 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-slate-200">Contact</span>
-              <h3 class="mt-4 text-2xl font-bold text-white">Talk to the project lead</h3>
-              <p class="mt-3 text-sm leading-7 text-slate-100">Formspree-backed contact form plus the official faculty contact details in a dark, focused layout.</p>
+              <span class="rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.24em]">Contact</span>
+              <h3 class="mt-4 text-2xl font-bold">Talk to the project lead</h3>
+              <p class="mt-3 text-sm leading-7">Formspree-backed contact form plus the official faculty contact details in a dark, focused layout.</p>
             </div>
-            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-200 transition group-hover:translate-x-1 group-hover:bg-white/12 group-hover:text-white">
+            <span class="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition group-hover:translate-x-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -409,16 +409,16 @@
     </section>
   </main>
 
-  <button id="scrollTop" type="button" aria-label="Scroll to top" class="fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-white shadow-glow transition duration-200 opacity-0 translate-y-3 pointer-events-none hover:bg-slate-900">
+  <button id="scrollTop" type="button" aria-label="Scroll to top" class="fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border shadow-glow transition duration-200 opacity-0 translate-y-3 pointer-events-none">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
     </svg>
   </button>
 
-  <footer class="border-t border-white/10 bg-slate-950/70 py-8">
-    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 text-sm text-slate-400 sm:px-6 lg:px-8 sm:flex-row sm:items-center sm:justify-between">
+  <footer class="border-t py-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 text-sm sm:px-6 lg:px-8 sm:flex-row sm:items-center sm:justify-between">
       <div>AMC Ahmedabad 2057 Master Plan</div>
-      <div class="text-slate-500">Built as a multi-page GitHub Pages site.</div>
+      <div class="">Built as a multi-page GitHub Pages site.</div>
     </div>
   </footer>
 
