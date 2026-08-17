@@ -1,265 +1,158 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us | AMC Ahmedabad 2057 Master Plan</title>
   <meta name="description" content="Contact form and official contact details for the AMC Ahmedabad 2057 Master Plan." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <script>
-    tailwind = window.tailwind || {};
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ["Inter", "system-ui", "sans-serif"],
-          },
-          boxShadow: {
-            glow: '0 24px 60px rgba(15, 23, 42, 0.14)',
-          },
-        },
-      },
-    };
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .hero-bg {
-      background-color: #ffffff;
-      background-image:
-        radial-gradient(circle at top left, rgba(105, 200, 255, 0.16), transparent 24%),
-        radial-gradient(circle at 90% 12%, rgba(216, 164, 65, 0.12), transparent 18%),
-        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-      background-size: cover;
-    }
-    .glass {
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
-    .wave-float {
-      animation: floaty 8s ease-in-out infinite;
-    }
-    .wave-float-delay {
-      animation: floaty 10s ease-in-out infinite;
-      animation-delay: -2s;
-    }
-    .wave-float-slow {
-      animation: floaty 12s ease-in-out infinite;
-      animation-delay: -4s;
-    }
-    @keyframes floaty {
-      0%, 100% { transform: translateY(0px) translateX(0px); }
-      50% { transform: translateY(-14px) translateX(8px); }
-    }
-  </style>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="contact" class="antialiased">
-  <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:px-4 focus:py-2" href="#main">Skip to content</a>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="sticky top-0 z-50 border-b backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-      <a href="index.html" class="flex min-w-0 items-center gap-3">
-        <div class="grid h-12 w-12 place-items-center rounded-2xl text-sm font-black tracking-[0.24em] shadow-glow">AMC</div>
-        <div class="grid h-12 w-12 place-items-center rounded-2xl text-[0.62rem] font-black tracking-[0.24em] shadow-glow">IITGN</div>
-        <div class="min-w-0">
-          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.3em]">AMC Consultancy Project</div>
-          <div class="truncate text-base font-bold sm:text-lg">Ahmedabad 2057 Master Plan</div>
-          <div class="truncate text-xs sm:text-sm">Ahmedabad Municipal Corporation x IIT Gandhinagar</div>
-        </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="AMC Ahmedabad 2057 Master Plan home">
+        <span class="brand-mark">AMC</span>
+        <span class="brand-text">
+          <span class="brand-kicker">AMC x IITGN Consultancy</span>
+          <span class="brand-name">Ahmedabad 2057 Master Plan</span>
+          <span class="brand-subtitle">City-scale drainage and sewerage infrastructure roadmap</span>
+        </span>
       </a>
 
-      <button id="navToggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border transition md:hidden" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav id="primary-nav" class="hidden w-full flex-col gap-2 rounded-3xl border p-3 shadow-glow md:flex md:w-auto md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
-        <a href="index.html" data-page="home" class="rounded-full px-4 py-2 text-sm font-semibold transition">Home</a>
-        <a href="overview.html" data-page="overview" class="rounded-full px-4 py-2 text-sm font-semibold transition">Overview</a>
-        <a href="scope.html" data-page="scope" class="rounded-full px-4 py-2 text-sm font-semibold transition">Scope of Work</a>
-        <a href="deliverables.html" data-page="deliverables" class="rounded-full px-4 py-2 text-sm font-semibold transition">Deliverables</a>
-        <a href="timeline.html" data-page="timeline" class="rounded-full px-4 py-2 text-sm font-semibold transition">Timeline</a>
-        <a href="contact.html" data-page="contact" class="rounded-full px-4 py-2 text-sm font-semibold transition">Contact Us</a>
+      <nav id="primary-nav" class="nav-links">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="overview.html" data-page="overview">Overview</a>
+        <a href="scope.html" data-page="scope">Scope of Work</a>
+        <a href="deliverables.html" data-page="deliverables">Deliverables</a>
+        <a href="timeline.html" data-page="timeline">Timeline</a>
+        <a href="contact.html" data-page="contact">Contact Us</a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="relative overflow-hidden">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
-      <div class="absolute inset-x-0 top-0 h-[26rem]"></div>
-      <div class="wave-float absolute left-6 top-10 hidden md:block">
+  <main id="main">
+    <div aria-hidden="true" class="contact-decor">
+      <div class="wave-float contact-wave contact-wave-left">
         <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 60C40 35 70 35 90 60C110 85 140 85 160 60" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-          <path d="M20 95C40 70 70 70 90 95C110 120 140 120 160 95" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-          <path d="M20 130C40 105 70 105 90 130C110 155 140 155 160 130" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+          <path d="M20 60C40 35 70 35 90 60C110 85 140 85 160 60" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+          <path d="M20 95C40 70 70 70 90 95C110 120 140 120 160 95" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+          <path d="M20 130C40 105 70 105 90 130C110 155 140 155 160 130" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
         </svg>
       </div>
-      <div class="wave-float-delay absolute right-10 top-16 hidden lg:block">
+      <div class="wave-float-delay contact-wave contact-wave-right">
         <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 80C52 50 82 50 110 80C138 110 168 110 196 80" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
-          <path d="M24 118C52 88 82 88 110 118C138 148 168 148 196 118" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
-          <path d="M24 156C52 126 82 126 110 156C138 186 168 186 196 156" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+          <path d="M24 80C52 50 82 50 110 80C138 110 168 110 196 80" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+          <path d="M24 118C52 88 82 88 110 118C138 148 168 148 196 118" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+          <path d="M24 156C52 126 82 126 110 156C138 186 168 186 196 156" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
         </svg>
       </div>
-      <div class="wave-float-slow absolute bottom-8 right-10 hidden md:block">
+      <div class="wave-float-slow contact-wave contact-wave-bottom">
         <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="80" cy="80" r="64" stroke="currentColor" stroke-width="10" opacity="0.35"/>
-          <path d="M40 80c12-14 24-14 40 0s28 14 40 0" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="80" cy="80" r="64" stroke="currentColor" stroke-width="10" opacity="0.35" />
+          <path d="M40 80c12-14 24-14 40 0s28 14 40 0" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
         </svg>
       </div>
     </div>
 
-    <section class="hero-bg">
-      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8 lg:py-16">
-        <div class="text-center lg:text-left" data-aos="fade-up">
-          <p class="contact-intro mb-3 text-base font-semibold">Get In Touch</p>
-          <h1 class="contact-title max-w-3xl text-4xl font-black leading-tight tracking-[-0.04em] sm:text-5xl md:text-6xl lg:text-7xl">
-            Let's talk about water infrastructure, research, and collaboration.
-          </h1>
-          <p class="contact-intro mx-auto mt-5 max-w-3xl text-lg leading-8 lg:mx-0">
+    <section class="contact-section">
+      <div class="shell contact-shell">
+        <article class="contact-hero" data-aos="fade-up">
+          <p class="contact-intro">Get In Touch</p>
+          <h1 class="contact-title">Let's talk about water infrastructure, research, and collaboration.</h1>
+          <p class="contact-intro">
             Reach out using the form below for research collaboration, academic discussion, and applied water infrastructure projects.
           </p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row lg:justify-start">
-            <a href="#contact-form" class="inline-flex items-center justify-center rounded-lg px-7 py-3 text-base font-bold transition">Send a Message</a>
-            <a href="timeline.html" class="inline-flex items-center justify-center rounded-lg border px-7 py-3 text-base font-semibold transition">View Timeline</a>
-          </div>
-        </div>
-
-        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-2" data-aos="fade-left">
-          <div class="sm:col-span-2 overflow-hidden rounded-2xl border shadow-glow">
-            <img src="Pranab Kumar Mohapatra.webp" alt="Prof. Pranab Kumar Mohapatra" class="h-[24rem] w-full object-cover object-top" loading="eager" decoding="async" />
-          </div>
-          <div class="contact-info-wrap rounded-2xl border p-5 shadow-glow">
-            <div class="text-xs font-bold uppercase tracking-[0.26em]">Contact Information</div>
-            <h2 class="mt-3 text-xl font-bold">Prof. Pranab Kumar Mohapatra</h2>
-            <p class="mt-3 text-sm leading-7">
-              Available for research collaboration, academic discussion, and applied water infrastructure projects.
-            </p>
-          </div>
-          <div class="contact-info-wrap rounded-2xl border p-5 shadow-glow">
-            <div class="text-xs font-bold uppercase tracking-[0.26em]">Institution</div>
-            <h3 class="mt-3 text-xl font-bold">IIT Gandhinagar, Ahmedabad</h3>
-            <p class="mt-3 text-sm leading-7">AMC x IITGN consultancy for a city-scale drainage and sewerage master plan.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-base leading-7 max-w-5xl mx-auto">
-          Reach out using the form below for research collaboration, academic discussion, and applied water infrastructure projects.
-        </p>
-      </div>
-    </section>
-
-    <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        <article class="contact-info-wrap rounded-3xl border p-6 shadow-glow sm:p-8" data-aos="fade-up">
-          <h2 class="text-3xl font-bold">Direct communication for project coordination</h2>
-          <p class="mt-4 text-base leading-8">
-            For project coordination, academic reference, or official correspondence, use the details above.
-          </p>
-          <div class="mt-8 space-y-4 rounded-2xl p-5">
-            <div>
-              <div class="text-xs font-bold uppercase tracking-[0.24em]">Email</div>
-              <a class="mt-1 block text-base font-semibold transition" href="mailto:pranabm@iitgn.ac.in">pranabm@iitgn.ac.in</a>
-            </div>
-            <div>
-              <div class="text-xs font-bold uppercase tracking-[0.24em]">Phone</div>
-              <a class="mt-1 block text-base font-semibold transition" href="tel:+917383325735">+91 73833 25735</a>
-            </div>
-            <div>
-              <div class="text-xs font-bold uppercase tracking-[0.24em]">Affiliation</div>
-              <div class="mt-1 text-base font-semibold">IIT Gandhinagar, Ahmedabad</div>
-            </div>
+          <div class="hero-actions">
+            <a href="#contact-form" class="button button-primary">Send a Message</a>
+            <a href="timeline.html" class="button button-secondary">View Timeline</a>
           </div>
         </article>
 
-        <article id="contact-form" class="contact-form-wrap rounded-3xl border p-6 shadow-glow sm:p-8" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="text-3xl font-bold">Get In Touch</h2>
-          <form class="contact-form mt-6 grid gap-4" action="https://formspree.io/f/mrpzpwqb" method="POST">
-            <label class="grid gap-2">
-              <span class="text-sm font-semibold">Name</span>
-              <input type="text" name="name" required class="w-full rounded-2xl border px-4 py-3 outline-none transition focus:ring-4" placeholder="Your name" />
+        <aside class="contact-info-wrap contact-profile-card" data-aos="fade-left">
+          <div class="contact-avatar">
+            <img src="Pranab%20Kumar%20Mohapatra.webp" alt="Prof. Pranab Kumar Mohapatra" loading="eager" decoding="async" />
+          </div>
+
+          <div class="info-block">
+            <span class="info-badge">Contact Information</span>
+            <h2>Prof. Pranab Kumar Mohapatra</h2>
+            <p>Available for research collaboration, academic discussion, and applied water infrastructure projects.</p>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:pranabm@iitgn.ac.in">pranabm@iitgn.ac.in</a>
+            </li>
+            <li>
+              <span class="label">Phone</span>
+              <a href="tel:+917383325735">+91 73833 25735</a>
+            </li>
+            <li>
+              <span class="label">Affiliation</span>
+              <span>IIT Gandhinagar, Ahmedabad</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="shell contact-shell">
+        <article class="contact-info-wrap" data-aos="fade-up">
+          <p class="pill">Direct communication for project coordination</p>
+          <h2 class="section-title title-spaced">Official contact details and coordination channel</h2>
+          <p class="contact-note note-spaced">
+            For project coordination, academic reference, or official correspondence, use the details above.
+          </p>
+          <p class="contact-note note-tight">
+            Reach out using the form below for research collaboration, academic discussion, and applied water infrastructure projects.
+          </p>
+        </article>
+
+        <article id="contact-form" class="contact-form-wrap" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="section-title">Get In Touch</h2>
+          <form class="contact-form" action="https://formspree.io/f/mrpzpwqb" method="POST">
+            <label>
+              <span class="field-label">Name</span>
+              <input type="text" name="name" required placeholder="Your name" />
             </label>
-            <label class="grid gap-2">
-              <span class="text-sm font-semibold">Email</span>
-              <input type="email" name="email" required class="w-full rounded-2xl border px-4 py-3 outline-none transition focus:ring-4" placeholder="you@example.com" />
+            <label>
+              <span class="field-label">Email</span>
+              <input type="email" name="email" required placeholder="you@example.com" />
             </label>
-            <label class="grid gap-2">
-              <span class="text-sm font-semibold">Message</span>
-              <textarea name="message" rows="7" required class="w-full rounded-2xl border px-4 py-3 outline-none transition focus:ring-4" placeholder="Tell us about your project or question"></textarea>
+            <label>
+              <span class="field-label">Message</span>
+              <textarea name="message" rows="7" required placeholder="Tell us about your project or question"></textarea>
             </label>
-            <button type="submit" class="contact-submit inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition">
-              Send Message
-            </button>
+            <button type="submit" class="contact-submit button">Send Message</button>
           </form>
         </article>
       </div>
     </section>
   </main>
 
-  <a class="floating-contact fixed bottom-5 left-5 z-50 rounded-full px-5 py-3 text-sm font-bold shadow-lg transition md:bottom-6 md:left-auto md:right-6" href="#contact-form">Contact Us</a>
-  <button id="scrollTop" type="button" aria-label="Scroll to top" class="fixed bottom-20 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border shadow-lg opacity-0 translate-y-3 pointer-events-none transition duration-200">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-    </svg>
-  </button>
+  <a class="floating-contact" href="#contact-form">Contact Us</a>
+  <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
 
-  <footer class="border-t py-8">
-    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 text-sm sm:px-6 lg:px-8 sm:flex-row sm:items-center sm:justify-between">
+  <footer class="footer">
+    <div class="shell footer-inner">
       <div>AMC Ahmedabad 2057 Master Plan</div>
       <div>Contact page powered by Formspree.</div>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 80 });
-
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('primary-nav');
-    const scrollTopButton = document.getElementById('scrollTop');
-
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', () => {
-        const isHidden = navMenu.classList.toggle('hidden');
-        navToggle.setAttribute('aria-expanded', String(!isHidden));
-      });
-
-      navMenu.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => {
-          if (window.innerWidth < 768) {
-            navMenu.classList.add('hidden');
-            navToggle.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    }
-
-    if (scrollTopButton) {
-      const updateScrollButton = () => {
-        const visible = window.scrollY > 500;
-        scrollTopButton.classList.toggle('opacity-0', !visible);
-        scrollTopButton.classList.toggle('translate-y-3', !visible);
-        scrollTopButton.classList.toggle('pointer-events-none', !visible);
-        scrollTopButton.classList.toggle('opacity-100', visible);
-        scrollTopButton.classList.toggle('translate-y-0', visible);
-      };
-
-      scrollTopButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-      window.addEventListener('scroll', updateScrollButton, { passive: true });
-      updateScrollButton();
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
 
