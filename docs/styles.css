@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   --bg: #f3f5f7;
@@ -90,9 +90,10 @@ textarea {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1100;
-  background: var(--header);
+  background: rgba(255, 255, 255, 0.84);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--header-line);
+  border-bottom: 1px solid rgba(16, 32, 51, 0.1);
+  box-shadow: 0 10px 30px rgba(10, 21, 36, 0.05);
 }
 
 .header-inner,
@@ -113,7 +114,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  color: #f4f7fb;
+  color: var(--ink);
   min-width: 0;
 }
 
@@ -128,7 +129,7 @@ textarea {
     rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
-  color: #fff;
+  color: var(--ink);
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.7rem;
   font-weight: 700;
@@ -143,7 +144,7 @@ textarea {
   font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: rgba(244, 247, 251, 0.58);
+  color: rgba(16, 32, 51, 0.62);
 }
 
 .brand-name {
@@ -157,14 +158,14 @@ textarea {
 .brand-subtitle {
   display: block;
   font-size: 0.84rem;
-  color: rgba(244, 247, 251, 0.78);
+  color: rgba(16, 32, 51, 0.72);
 }
 
 .nav-toggle {
   display: none;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.06);
-  color: #fff;
+  border: 1px solid rgba(16, 32, 51, 0.12);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
   width: 48px;
   height: 48px;
   border-radius: 14px;
@@ -194,7 +195,7 @@ textarea {
   min-height: 44px;
   padding: 0 14px;
   border-radius: 999px;
-  color: rgba(244, 247, 251, 0.78);
+  color: rgba(16, 32, 51, 0.72);
   border: 1px solid transparent;
   transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
 }
@@ -202,9 +203,9 @@ textarea {
 .nav-links a:hover,
 .nav-links a:focus-visible,
 .nav-links a.active {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.14);
+  color: #0f2940;
+  background: rgba(105, 200, 255, 0.12);
+  border-color: rgba(105, 200, 255, 0.22);
   transform: translateY(-1px);
 }
 
@@ -250,8 +251,8 @@ main {
 .contact-card,
 .form-card {
   border-radius: var(--radius-lg);
-  border: 1px solid var(--line);
-  background: var(--surface);
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow);
 }
 
@@ -324,14 +325,14 @@ main {
 
 .button-primary {
   background: linear-gradient(135deg, #0f2940, #173652);
-  color: #fff;
+  color: var(--ink);
   box-shadow: 0 14px 30px rgba(15, 41, 64, 0.2);
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.94);
   color: var(--ink);
-  border-color: var(--line);
+  border-color: rgba(16, 32, 51, 0.1);
 }
 
 .hero-metrics {
@@ -511,11 +512,15 @@ main {
 }
 
 .page-hero {
-  padding: 34px 0 18px;
+  padding: 38px 0 20px;
 }
 
 .page-hero .panel {
-  padding: 34px;
+  padding: 36px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 253, 0.96)),
+    linear-gradient(135deg, rgba(105, 200, 255, 0.08), rgba(216, 164, 65, 0.06));
+  border-color: rgba(16, 32, 51, 0.08);
 }
 
 .page-title {
@@ -538,12 +543,12 @@ main {
 
 .contact-hero {
   padding: 36px 36px 10px;
-  color: #fff;
+  color: var(--ink);
 }
 
 .contact-title {
   font-size: clamp(2.6rem, 5vw, 4.5rem);
-  color: #fff;
+  color: var(--ink);
 }
 
 .contact-intro {
@@ -592,7 +597,7 @@ main {
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  color: var(--ink);
   padding: 14px 16px;
   outline: none;
   transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
@@ -662,7 +667,7 @@ main {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
-  color: #fff;
+  color: var(--ink);
   line-height: 1.05;
 }
 
@@ -697,7 +702,7 @@ main {
 
 .contact-list a,
 .contact-list span {
-  color: #fff;
+  color: var(--ink);
   font-weight: 700;
 }
 
@@ -749,7 +754,7 @@ main {
   min-height: 50px;
   padding: 0 18px;
   background: linear-gradient(135deg, #0f2940, #173652);
-  color: #fff;
+  color: var(--ink);
   font-weight: 800;
   letter-spacing: 0.01em;
 }
@@ -792,7 +797,7 @@ main {
 .dark-section .card,
 .dark-section .deliverable,
 .dark-section .timeline-item {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.94);
 }
 
 @media (max-width: 1080px) {
@@ -834,9 +839,9 @@ main {
     gap: 8px;
     padding: 14px;
     border-radius: 22px;
-    background: rgba(8, 16, 28, 0.96);
-    border: 1px solid var(--header-line);
-    box-shadow: var(--shadow-dark);
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(16, 32, 51, 0.1);
+    box-shadow: 0 20px 50px rgba(10, 21, 36, 0.12);
     transform-origin: top;
     transform: scaleY(0.96);
     opacity: 0;
@@ -932,4 +937,6 @@ main {
     bottom: 10px;
   }
 }
+
+
 
